@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mon site Express</title>
+    <title>My Express Site</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Bienvenue sur mon site Express</h1>
-    <button id="fetchButton">Effectuer une requête AJAX</button>
-    <div id="responseContainer"></div>
+    <div class="container">
+        <h1>Welcome to my Express site</h1>
+        <button id="fetchButton">Make an AJAX request</button>
+        <div id="responseContainer" class="hidden">
+            <!-- The JSON response will be displayed here -->
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

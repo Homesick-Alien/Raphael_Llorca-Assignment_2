@@ -1,0 +1,51 @@
+/* Reset default layout */
+body, h1, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header style */
+h1 {
+    color: #333;
+}
+
+/* Button style */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* AJAX response container style */
+#responseContainer {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+#responseContainer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
